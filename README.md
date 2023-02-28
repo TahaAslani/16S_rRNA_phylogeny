@@ -26,6 +26,7 @@ We need Sequence-based ITGDB: ```seq_itgdb_seq.fasta``` (sequence file) and ```s
 
 # Run
 ```apps/muscle -in toy.fasta -out msa.fasta
+apps/muscle -in seq_itgdb_seq.fasta -out msa.fasta
 apps/muscle -in msa.fasta -out refined.phylip -refine -phyi
 apps/phyml -i refined.phylip -m JC69 -o tlr
 python plot.py refined.phylip_phyml_tree.txt refined.phylip results.jpg
