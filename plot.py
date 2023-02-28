@@ -6,10 +6,11 @@ import pylab
 input_path = sys.argv[1]
 output_path = sys.argv[2]
 
+
 matplotlib.use('Agg')
 
 tree=Phylo.read(input_path,'newick')
-Phylo.draw(tree)
+Phylo.draw(tree, do_show=False)
 
 pylab.savefig(output_path ,dpi=1500)
 
