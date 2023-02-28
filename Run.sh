@@ -36,5 +36,5 @@ echo "Plot..."
 python plot.py $result/refined.phylip_phyml_tree.txt $result/results.jpg
 echo "Done!"
 
+echo ""
 echo "The tree is saved in "$result/results.jpg
-
