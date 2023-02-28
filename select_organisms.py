@@ -3,12 +3,12 @@ import sys
 
 # fasta_file = '/home/taha/phylogenic_tree/seq_itgdb_seq.fasta'
 # result_file = '/home/taha/phylogenic_tree/selected.fasta'
-# wanted = 'MSBN01003282.16303.18157 AACZ04068991.160832.162580 DQ457645.1.1793 2529960'
-# names = 'Human Chimp Panda Watermelon'
+# wanted_names = '/home/taha/phylogenic_tree/Selected.txt'
 
 fasta_file = sys.argv[1]
-result_file = sys.argv[2]
-wanted_names = sys.argv[3]
+wanted_names = sys.argv[2]
+result_file = sys.argv[3]
+
 
 file1 = open(wanted_names, 'r')
 Lines = file1.readlines()
