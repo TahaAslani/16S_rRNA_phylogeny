@@ -37,14 +37,6 @@ Human, Chimp, Panda, Watermelon
 ```
 
 # Run the pipeline
-Run each command:
 ```
-mkdir files
-python select_organisms.py seq_itgdb_seq.fasta Selected.txt files/selected.fasta
-apps/muscle -in files/selected.fasta -out files/msa.fasta
-apps/muscle -in files/msa.fasta -out files/refined.phylip -refine -phyi
-apps/phyml -i files/refined.phylip -m JC69 -o tlr
-python plot.py files/refined.phylip_phyml_tree.txt files/refined.phylip results.jpg
+bash Run.sh seq_itgdb_seq.fasta Selected.txt Results
 ```
-Or run everything at once:
-bash Run.sh
