@@ -5,6 +5,10 @@ Generate phylogenic tree form 16S ribosomal RNA
 
 ## Dependencies
 
+### Install conda (if you do not have it)
+Conda can be installed using these instructions:
+https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
+
 ### Create a conda environment and install packages
 ```
 conda create -n 16S -c conda-forge biopython matplotlib -y
