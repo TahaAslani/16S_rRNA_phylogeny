@@ -3,7 +3,16 @@ Generate phylogenic tree form 16S ribosomal RNA
 
 # Install
 
-## Muscle
+## Dependencies
+
+### Create a conda environment and install packages
+```
+conda create -n 16S ddocent matplotlib
+source activate 16s
+dDocent
+```
+
+### Muscle
 ```
 mkdir apps
 wget https://www.drive5.com/muscle/downloads3.8.31/muscle3.8.31_i86linux64.tar.gz
@@ -13,19 +22,13 @@ chmod +x apps/muscle
 rm muscle3.8.31_i86linux64.tar.gz
 ```
 
-## PhyML
+### PhyML
 ```
 wget http://www.atgc-montpellier.fr/download/binaries/phyml/PhyML-3.1.zip
 unzip PhyML-3.1.zip -d apps
 mv apps/PhyML-3.1/PhyML-3.1_linux64 apps/phyml
 rm PhyML-3.1.zip
 ```
-
-## Download Data
-Download 16S rRNA data from the following link:
-https://github.com/yphsieh/16S-ITGDB/tree/master/data
-
-We need Sequence-based ITGDB: ```seq_itgdb_seq.fasta``` (sequence file) and ```seq_itgdb_taxa.txt``` (taxonomy file)
 
 ## Download This Repo
 ```
@@ -35,6 +38,13 @@ cp 16S_rRNA_phylogeny-main/* .
 rm -r 16S_rRNA_phylogeny-main
 rm main.zip
 ```
+
+## Download Data
+Download 16S rRNA data from the following link:
+https://github.com/yphsieh/16S-ITGDB/tree/master/data
+
+We need Sequence-based ITGDB: ```seq_itgdb_seq.fasta``` (sequence file) and ```seq_itgdb_taxa.txt``` (taxonomy file)
+
 
 # Run
 
