@@ -7,7 +7,7 @@ Gorilla,CYUI03002054.3385.5213
 Chinchilla,GBCC01000156.17.1875
 Peach,AKXU02001222.66885.68655
 E.coli,FBUV01000044.3305.4693
-Glomeromycota(Fungus),MG829365.1.1650
+Fungus(Glomeromycota),MG829365.1.1650
 Sponge,AF100948.1.1813
 Jellyfish,AF358104.1.1824
 choanoflagellate,EF432540.1.1702
@@ -17,3 +17,5 @@ Metallosphaera,KJ735100
 crocodile,JRWT01012927.1.1407
 sturgeon(Fish),AF188387.1.1771
 squid,KY387928.1279.3542
+Fungus(uncultured),EU910609.1.1774
+
