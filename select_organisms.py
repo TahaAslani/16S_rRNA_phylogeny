@@ -14,20 +14,19 @@ file1 = open(wanted_names, 'r')
 Lines = file1.readlines()
 file1.close()
 
-wanted = Lines[0].replace('\n', '').split(' ')
-names = Lines[1].replace('\n', '').split(' ')
-
-assert len(names) == len(wanted)
 
 name_dict = dict()
-for i in range(len(wanted)):
-    name_dict[wanted[i]] = names[i]
+for line in Lines:
+    
+    name, code = line.replace('\n', '').split(',')
+    name_dict[code] = name
+    
 
 fasta_sequences = SeqIO.parse(open(fasta_file),'fasta')
 
 with open(result_file, "w") as f:
     for seq in fasta_sequences:
-        if seq.id in wanted:
+        if seq.id in name_dict.keys():
             
             my_name = name_dict[seq.id]
             seq.id = my_name
