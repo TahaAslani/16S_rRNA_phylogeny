@@ -27,7 +27,7 @@ apps/muscle -in $result/msa.fasta -out $result/refined.phylip -refine -phyi -qui
 echo "Done!"
 
 echo ""
-echo "Build the tree using PhyML ..."
+echo "Build the tree using PhyML..."
 apps/phyml -i $result/refined.phylip -m JC69 -o tlr --quiet
 echo "Done!"
 
