@@ -38,13 +38,7 @@ rm main.zip
 
 # Run
 
-## Select Organisms of interest
-```
-echo "MSBN01003282.16303.18157 AACZ04068991.160832.162580 DQ457645.1.1793 KJ740195.1.1746 DQ222453.1.1873 LKUO01006623.1.1358">>Test.txt
-echo "Human Chimp Panda Orange Cow Cucumber">>Test.txt
-```
-
-## Run the pipeline
+Run the pipeline
 ```
 bash Run.sh seq_itgdb_seq.fasta Test.txt Results
 ```
