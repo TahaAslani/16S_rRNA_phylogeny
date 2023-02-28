@@ -2,7 +2,7 @@ DB=$1
 Selected=$2
 result=$3
 
-mkdir $result
+mkdir $result -p
 
 # Seperate the wanted species
 python select_organisms.py $DB $Selected $result/selected.fasta
