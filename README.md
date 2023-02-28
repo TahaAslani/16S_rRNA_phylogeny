@@ -27,6 +27,12 @@ https://github.com/yphsieh/16S-ITGDB/tree/master/data
 
 We need Sequence-based ITGDB: ```seq_itgdb_seq.fasta``` (sequence file) and ```seq_itgdb_taxa.txt``` (taxonomy file)
 
+# Download This Repo
+```
+wget https://github.com/TahaAslani/16S_rRNA_phylogeny/archive/refs/heads/main.zip
+unzip main.zip
+cd main.zip
+```
 
 
 # Run
