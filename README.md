@@ -39,8 +39,8 @@ rm -r 16S_rRNA_phylogeny-main
 
 ## Select Organisms of interest
 ```
-echo "MSBN01003282.16303.18157 AACZ04068991.160832.162580 DQ457645.1.1793 2529960\nHuman Chimp Panda">Test.txt
-echo "Human Chimp Panda">Test.txt
+echo "MSBN01003282.16303.18157 AACZ04068991.160832.162580 DQ457645.1.1793 2529960\nHuman Chimp Panda">>Test.txt
+echo "Human Chimp Panda">>Test.txt
 ```
 
 ## Run the pipeline
