@@ -31,6 +31,10 @@ echo "Build the tree using PhyML ..."
 apps/phyml -i $result/refined.phylip -m JC69 -o tlr --quiet
 echo "Done!"
 
+echo ""
 echo "Plot..."
 python plot.py $result/refined.phylip_phyml_tree.txt $result/results.jpg
 echo "Done!"
+
+echo "The tree is saved in "$result/results.jpg
+
