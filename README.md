@@ -24,7 +24,16 @@ https://github.com/yphsieh/16S-ITGDB/tree/master/data
 
 We need Sequence-based ITGDB: ```seq_itgdb_seq.fasta``` (sequence file) and ```seq_itgdb_taxa.txt``` (taxonomy file)
 
+
+
 # Run
+## Select Organisms of interest
+```
+MSBN01003282.16303.18157, AACZ04068991.160832.162580, DQ457645.1.1793, 2529960
+Human, Chimp, Panda, Watermelon
+```
+
+# Run the pipeline
 ```apps/muscle -in toy.fasta -out msa.fasta
 apps/muscle -in seq_itgdb_seq.fasta -out msa.fasta
 apps/muscle -in msa.fasta -out refined.phylip -refine -phyi
