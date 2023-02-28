@@ -17,6 +17,8 @@ file1.close()
 wanted = Lines[0].split(' ')
 names = Lines[1].split(' ')
 
+assert len(names) == len(wanted)
+
 name_dict = dict()
 for i in range(len(wanted)):
     name_dict[wanted[i]] = names[i]
