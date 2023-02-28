@@ -34,7 +34,7 @@ mv apps/PhyML-3.1/PhyML-3.1_linux64 apps/phyml
 rm PhyML-3.1.zip
 ```
 
-## Download This Repo
+## This Repo
 ```
 wget https://github.com/TahaAslani/16S_rRNA_phylogeny/archive/refs/heads/main.zip
 unzip main.zip
@@ -43,7 +43,7 @@ rm -r 16S_rRNA_phylogeny-main
 rm main.zip
 ```
 
-## Download Data
+## Data
 Download 16S rRNA data from the following link:
 https://github.com/yphsieh/16S-ITGDB/tree/master/data
 
