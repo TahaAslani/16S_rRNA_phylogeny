@@ -7,9 +7,8 @@ Generate phylogenic tree form 16S ribosomal RNA
 
 ### Create a conda environment and install packages
 ```
-conda create -n 16S ddocent matplotlib
-source activate 16s
-dDocent
+conda create -n 16S -c conda-forge biopython matplotlib -y
+conda activate 16S
 ```
 
 ### Muscle
