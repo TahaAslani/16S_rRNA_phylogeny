@@ -1,6 +1,6 @@
 DB=$1
 Selected=$2
-result==$3
+result=$3
 
 mkdir $result
 
