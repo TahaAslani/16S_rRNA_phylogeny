@@ -14,8 +14,8 @@ file1 = open(wanted_names, 'r')
 Lines = file1.readlines()
 file1.close()
 
-wanted = Lines[0].split(' ')
-names = Lines[1].split(' ')
+wanted = Lines[0].replace('\n', '').split(' ')
+names = Lines[1].replace('\n', '').split(' ')
 
 assert len(names) == len(wanted)
 
