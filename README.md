@@ -5,6 +5,7 @@ Generate phylogenic tree form 16S ribosomal RNA
 
 ## Muscle
 ```
+mkdir apps
 wget https://www.drive5.com/muscle/downloads3.8.31/muscle3.8.31_i86linux64.tar.gz
 tar xvfz muscle3.8.31_i86linux64.tar.gz -C apps
 mv apps/muscle3.8.31_i86linux64 apps/muscle
