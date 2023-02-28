@@ -24,7 +24,7 @@ echo "Step 2..."
 apps/muscle -in $result/msa.fasta -out $result/refined.phylip -refine -phyi -quiet
 
 echo ""
-echo "Build the treeusing PhyML ..."
+echo "Build the tree using PhyML ..."
 apps/phyml -i $result/refined.phylip -m JC69 -o tlr --quiet
 
 echo "Plot..."
