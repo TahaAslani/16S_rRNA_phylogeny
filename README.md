@@ -10,6 +10,7 @@ wget https://www.drive5.com/muscle/downloads3.8.31/muscle3.8.31_i86linux64.tar.g
 tar xvfz muscle3.8.31_i86linux64.tar.gz -C apps
 mv apps/muscle3.8.31_i86linux64 apps/muscle
 chmod +x apps/muscle
+rm muscle3.8.31_i86linux64.tar.gz
 ```
 
 ## PhyML
@@ -17,6 +18,7 @@ chmod +x apps/muscle
 wget http://www.atgc-montpellier.fr/download/binaries/phyml/PhyML-3.1.zip
 unzip PhyML-3.1.zip -d apps
 mv apps/PhyML-3.1/PhyML-3.1_linux64 apps/phyml
+rm PhyML-3.1.zip
 ```
 
 # Download Data
