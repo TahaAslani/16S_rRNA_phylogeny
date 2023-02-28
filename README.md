@@ -5,11 +5,12 @@ Generate phylogenic tree form 16S ribosomal RNA
 
 ## Dependencies
 
-### Install conda (if you do not have it)
+### Conda (skip if you already have conda installed)
 Conda can be installed using these instructions:
 https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
 
-### Create a conda environment and install packages
+### Environment
+Create a conda environment and install packages
 ```
 conda create -n 16S -c conda-forge biopython matplotlib -y
 conda activate 16S
@@ -50,8 +51,15 @@ We need Sequence-based ITGDB: ```seq_itgdb_seq.fasta``` (sequence file) and ```s
 
 
 # Run
+Run command
+```
+bash Run.sh seq_itgdb_seq.fasta input_file output_folder
+```
+The input_file is a comma-separated text file. Each row is an organism and has two columns: The first column is the name of the organism (that you choose) and the second column is the corresponding code in the ```seq_itgdb_taxa.txt```.
 
-Run the pipeline
+Run the pipeline for the test_species.csv species
 ```
-bash Run.sh seq_itgdb_seq.fasta Test.csv Results
+bash Run.sh seq_itgdb_seq.fasta test_species.csv Results
 ```
+
+For other choice of species, look up their code in ```seq_itgdb_taxa.txt``` and replace them in test_species.
