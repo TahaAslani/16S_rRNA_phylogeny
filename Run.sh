@@ -1,6 +1,18 @@
-mkdir files
-python select_organisms.py seq_itgdb_seq.fasta Selected.txt files/selected.fasta
-apps/muscle -in files/selected.fasta -out files/msa.fasta
-apps/muscle -in files/msa.fasta -out files/refined.phylip -refine -phyi
-apps/phyml -i files/refined.phylip -m JC69 -o tlr
-python plot.py files/refined.phylip_phyml_tree.txt results.jpg
+DB=$1
+Selected=$2
+result==$3
+
+mkdir $result
+
+# Seperate the wanted species
+python select_organisms.py $DB $Selected $result/selected.fasta
+
+# Alsign sequqnces
+apps/muscle -in $result/selected.fasta -out $result/msa.fasta
+apps/muscle -in $result/msa.fasta -out $result/refined.phylip -refine -phyi
+
+# Build the tree
+apps/phyml -i $result/refined.phylip -m JC69 -o tlr
+
+# Plot
+python plot.py $result/refined.phylip_phyml_tree.txt $result/refined.phylip $result/results.jpg
