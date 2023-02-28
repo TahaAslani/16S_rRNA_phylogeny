@@ -24,6 +24,8 @@ for line in Lines:
 
 fasta_sequences = SeqIO.parse(open(fasta_file),'fasta')
 
+print('Found sequences:')
+
 with open(result_file, "w") as f:
     for seq in fasta_sequences:
         if seq.id in name_dict.keys():
@@ -31,5 +33,7 @@ with open(result_file, "w") as f:
             my_name = name_dict[seq.id]
             seq.id = my_name
             seq.description=''
-            print(my_name)
+            
             SeqIO.write([seq], f, "fasta")
+            
+            print(my_name)
