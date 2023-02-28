@@ -15,4 +15,4 @@ apps/muscle -in $result/msa.fasta -out $result/refined.phylip -refine -phyi
 apps/phyml -i $result/refined.phylip -m JC69 -o tlr
 
 # Plot
-python plot.py $result/refined.phylip_phyml_tree.txt $result/refined.phylip $result/results.jpg
+python plot.py $result/refined.phylip_phyml_tree.txt $result/results.jpg
