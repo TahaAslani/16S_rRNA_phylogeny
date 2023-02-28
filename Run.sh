@@ -6,11 +6,11 @@ echo "GENERATE PHYLOGENIC TREE FORM 16S RIBOSOMAL RNA"
 echo ""
 echo "credit: Taha Aslani"
 echo "https://github.com/TahaAslani/16S_rRNA_phylogeny"
-echo ""
+echo "\n"
 
 mkdir $result -p
 
-echo ""
+echo "\n"
 echo "Seperate the DNA sequqnce of the selected organisms..."
 python select_organisms.py $DB $Selected $result/selected.fasta
 echo "Done!"
@@ -26,7 +26,7 @@ apps/muscle -in $result/msa.fasta -out $result/refined.phylip -refine -phyi -qui
 
 echo "Done!"
 
-echo ""
+echo "\n"
 echo "Build the tree using PhyML ..."
 apps/phyml -i $result/refined.phylip -m JC69 -o tlr --quiet
 echo "Done!"
