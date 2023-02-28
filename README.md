@@ -40,5 +40,5 @@ rm main.zip
 
 Run the pipeline
 ```
-bash Run.sh seq_itgdb_seq.fasta Test.txt Results
+bash Run.sh seq_itgdb_seq.fasta Test.csv Results
 ```
