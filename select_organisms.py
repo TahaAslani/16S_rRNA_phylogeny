@@ -37,3 +37,5 @@ with open(result_file, "w") as f:
             SeqIO.write([seq], f, "fasta")
             
             print(my_name, end=" - ")
+
+print("")
