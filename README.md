@@ -33,6 +33,7 @@ wget https://github.com/TahaAslani/16S_rRNA_phylogeny/archive/refs/heads/main.zi
 unzip main.zip
 cp 16S_rRNA_phylogeny-main/* .
 rm -r 16S_rRNA_phylogeny-main
+rm main.zip
 ```
 
 # Run
