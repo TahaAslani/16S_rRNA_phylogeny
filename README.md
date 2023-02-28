@@ -31,7 +31,8 @@ We need Sequence-based ITGDB: ```seq_itgdb_seq.fasta``` (sequence file) and ```s
 ```
 wget https://github.com/TahaAslani/16S_rRNA_phylogeny/archive/refs/heads/main.zip
 unzip main.zip
-cd main.zip
+cp 16S_rRNA_phylogeny-main/* .
+rm -r 16S_rRNA_phylogeny-main
 ```
 
 # Run
