@@ -1,7 +1,7 @@
 # 16S_rRNA_phylogeny
 Generate phylogenic tree form 16S ribosomal RNA
 
-# Install Requirments
+# Install
 
 ## Muscle
 ```
@@ -21,28 +21,28 @@ mv apps/PhyML-3.1/PhyML-3.1_linux64 apps/phyml
 rm PhyML-3.1.zip
 ```
 
-# Download Data
+## Download Data
 Download 16S rRNA data from the following link:
 https://github.com/yphsieh/16S-ITGDB/tree/master/data
 
 We need Sequence-based ITGDB: ```seq_itgdb_seq.fasta``` (sequence file) and ```seq_itgdb_taxa.txt``` (taxonomy file)
 
-# Download This Repo
+## Download This Repo
 ```
 wget https://github.com/TahaAslani/16S_rRNA_phylogeny/archive/refs/heads/main.zip
 unzip main.zip
 cd main.zip
 ```
 
-
 # Run
+
 ## Select Organisms of interest
 ```
 MSBN01003282.16303.18157, AACZ04068991.160832.162580, DQ457645.1.1793, 2529960
 Human, Chimp, Panda, Watermelon
 ```
 
-# Run the pipeline
+## Run the pipeline
 ```
 bash Run.sh seq_itgdb_seq.fasta Selected.txt Results
 ```
