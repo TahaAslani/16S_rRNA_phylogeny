@@ -39,11 +39,12 @@ rm -r 16S_rRNA_phylogeny-main
 
 ## Select Organisms of interest
 ```
-MSBN01003282.16303.18157, AACZ04068991.160832.162580, DQ457645.1.1793, 2529960
-Human, Chimp, Panda, Watermelon
+echo "MSBN01003282.16303.18157 AACZ04068991.160832.162580 DQ457645.1.1793 2529960\nHuman Chimp Panda">Test.txt
+echo "Human Chimp Panda">Test.txt
+
 ```
 
 ## Run the pipeline
 ```
-bash Run.sh seq_itgdb_seq.fasta Selected.txt Results
+bash Run.sh seq_itgdb_seq.fasta Test.txt Results
 ```
