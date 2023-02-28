@@ -40,8 +40,8 @@ rm main.zip
 
 ## Select Organisms of interest
 ```
-echo "MSBN01003282.16303.18157 AACZ04068991.160832.162580 DQ457645.1.1793">>Test.txt
-echo "Human Chimp Panda">>Test.txt
+echo "MSBN01003282.16303.18157 AACZ04068991.160832.162580 DQ457645.1.1793 KJ740195.1.1746 DQ222453.1.1873">>Test.txt
+echo "Human Chimp Panda Orange Cow">>Test.txt
 ```
 
 ## Run the pipeline
