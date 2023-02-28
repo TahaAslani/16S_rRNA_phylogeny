@@ -34,7 +34,7 @@ Human, Chimp, Panda, Watermelon
 ```
 
 # Run the pipeline
-```apps/muscle -in toy.fasta -out msa.fasta
+```apps/muscle -in selected.fasta -out msa.fasta
 apps/muscle -in seq_itgdb_seq.fasta -out msa.fasta
 apps/muscle -in msa.fasta -out refined.phylip -refine -phyi
 apps/phyml -i refined.phylip -m JC69 -o tlr
