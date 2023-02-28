@@ -12,7 +12,7 @@ https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html
 ### Environment
 Create a conda environment and install packages
 ```
-conda create -n 16S -c conda-forge biopython matplotlib -y
+conda create -n 16S -c conda-forge biopython=1.81 matplotlib=3.3.4 -y
 conda activate 16S
 ```
 ### Muscle
