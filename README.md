@@ -15,13 +15,12 @@ Create a conda environment and install packages
 conda create -n 16S -c conda-forge biopython=1.81 matplotlib=3.3.4 -y
 conda activate 16S
 ```
+### PIP (Alternative to conda)
 Altetrnatively, you can use pip:
 ```
 pip install biopython==1.81 
 pip install matplotlib==3.3.4
 ```
-
-
 ### Muscle
 ```
 mkdir apps
