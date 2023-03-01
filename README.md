@@ -19,7 +19,7 @@ conda activate 16S
 Altetrnatively, you can use pip:
 ```
 pip install biopython==1.81 
-pip install matplotlib==3.3.4
+pip install matplotlib
 ```
 ### Muscle
 ```
